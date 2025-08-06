@@ -1,0 +1,41 @@
+{
+  "name": "soso-panel",
+  "version": "0.1.0",
+  "author": "sophia (https://github.com/sophia-ooo)",
+  "description": "A declarative, event-driven graphical interface for monitoring and modifying JavaScript variables.",
+  "license": "MIT",
+  "main": "dist/soso-panel.js",
+  "module": "dist/soso-panel.js",
+  "type": "module",
+  "workspaces": ["examples"],
+  "files": ["dist"],
+  "exports": {
+    ".": "./dist/soso-panel.js",
+    "./external": "./dist/soso-panel.external.js"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "build:examples": "npm run build --workspace=examples",
+    "build:all": "npm run build && npm run build:examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophia-ooo/panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sophia-ooo/panel/issues"
+  },
+  "homepage": "https://github.com/sophia-ooo/panel#readme",
+  "devDependencies": {
+    "esbuild": "^0.25.5",
+    "preact": "^10.26.8"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "preact": {
+      "optional": true
+    }
+  }
+}
