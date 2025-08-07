@@ -1,4 +1,4 @@
-import Soso from "soso-panel";
+import soso from "soso-panel";
 
 // ============================================================================
 // SIMPLE PARTICLE SYSTEM WITH IMMEDIATE FEEDBACK
@@ -22,7 +22,7 @@ const params = {
 };
 
 // Create panel
-const panel = Soso.create({
+const panel = soso.create({
   id: "particles",
   type: "group",
   nodes: [

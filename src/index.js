@@ -34,7 +34,7 @@ export default {
    * - **object** a single `group` containing nested `nodes`
    *
    * ```js
-   * const panel = Soso.create(
+   * const panel = soso.create(
    *   [
    *     { id: "speed", type: "range", min: 0, max: 10, value: 1 },
    *     { id: "color", type: "color", value: "#ff0055" },

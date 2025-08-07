@@ -1,4 +1,4 @@
-import Soso from "soso-panel";
+import soso from "soso-panel";
 
 // ============================================================================
 // LIBRARY SETUP - Comprehensive Control State Testing
@@ -8,7 +8,7 @@ const container = document.getElementById("container");
 const createMount = () => container.appendChild(document.createElement("div"));
 
 // Text control states
-const textPanel = Soso.create(
+const textPanel = soso.create(
   {
     type: "group",
     label: "type: text",
@@ -65,7 +65,7 @@ const textPanel = Soso.create(
 );
 
 // Display control variations
-const displayPanel = Soso.create(
+const displayPanel = soso.create(
   {
     type: "group",
     label: "type: display",
@@ -120,7 +120,7 @@ line 3
 );
 
 // Checkbox states
-const togglePanel = Soso.create(
+const togglePanel = soso.create(
   {
     type: "group",
     label: "type: toggle",
@@ -148,7 +148,7 @@ const togglePanel = Soso.create(
 );
 
 // Number states
-const numberPanel = Soso.create(
+const numberPanel = soso.create(
   {
     type: "group",
     label: "type: number",
@@ -196,7 +196,7 @@ const numberPanel = Soso.create(
 );
 
 // Range variations
-const rangePanel = Soso.create(
+const rangePanel = soso.create(
   {
     type: "group",
     label: "type: range",
@@ -254,7 +254,7 @@ const rangePanel = Soso.create(
 );
 
 // Color states
-const colorPanel = Soso.create(
+const colorPanel = soso.create(
   {
     type: "group",
     label: "type: color",
@@ -294,7 +294,7 @@ const colorPanel = Soso.create(
 );
 
 // Select variations
-const selectPanel = Soso.create(
+const selectPanel = soso.create(
   {
     type: "group",
     label: "type: select",
@@ -368,7 +368,7 @@ const selectPanel = Soso.create(
 );
 
 // Toggle group variations
-const buttonsPanel = Soso.create(
+const buttonsPanel = soso.create(
   {
     type: "group",
     label: "type: buttons",
@@ -411,7 +411,7 @@ const buttonsPanel = Soso.create(
 );
 
 // Button variations
-const buttonPanel = Soso.create(
+const buttonPanel = soso.create(
   {
     type: "group",
     label: "type: button",
@@ -441,7 +441,7 @@ const buttonPanel = Soso.create(
 );
 
 // Number monitor variations
-const monitorPanel = Soso.create(
+const monitorPanel = soso.create(
   {
     type: "group",
     label: "type: graph",
@@ -488,7 +488,7 @@ const monitorPanel = Soso.create(
 );
 
 // Vector 2D variations
-const vectorPanel = Soso.create(
+const vectorPanel = soso.create(
   {
     type: "group",
     label: "type: pad2",
@@ -544,7 +544,7 @@ const vectorPanel = Soso.create(
 );
 
 // Group variations
-const groupPanel = Soso.create(
+const groupPanel = soso.create(
   {
     type: "group",
     label: "type: group (nesting)",
@@ -598,7 +598,7 @@ const groupPanel = Soso.create(
 );
 
 // Visibility control demonstration
-const visibilityPanel = Soso.create(
+const visibilityPanel = soso.create(
   {
     type: "group",
     label: "visible property demo",
@@ -636,7 +636,7 @@ const visibilityPanel = Soso.create(
 );
 
 // Mixed control panel - stress test
-const mixedPanel = Soso.create(
+const mixedPanel = soso.create(
   {
     type: "group",
     id: "mixed controls stress test",

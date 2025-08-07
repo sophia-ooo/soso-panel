@@ -2,11 +2,11 @@
 
 # API Reference
 
-The soso-panel API consists of 7 methods: 2 static methods on the `Soso` object and 5 instance methods on created panels.
+The soso-panel API consists of 7 methods: 2 static methods on the `soso` object and 5 instance methods on created panels.
 
 ## Static Methods
 
-### `Soso.create(config[, options])`
+### `soso.create(config[, options])`
 
 Creates a new panel instance.
 
@@ -26,7 +26,7 @@ Creates a new panel instance.
 **Returns:** Panel instance
 
 ```js
-const panel = Soso.create(
+const panel = soso.create(
     [{ id: "speed", type: "range", min: 0, max: 10, value: 1 }],
     {
         mount: document.querySelector("#controls"),
@@ -35,7 +35,7 @@ const panel = Soso.create(
 );
 ```
 
-### `Soso.register(type, component[, options])`
+### `soso.register(type, component[, options])`
 
 Register a custom control type.
 

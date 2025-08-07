@@ -9,7 +9,7 @@ A **control** is a UI element that displays and/or modifies a value. Each contro
 { id: "speed", type: "range", min: 0, max: 10, value: 5 }
 
 // Multiple controls in a panel
-Soso.create([
+soso.create([
   { id: "speed", type: "range", min: 0, max: 10, value: 5 },
   { id: "color", type: "color", value: "#ff0055" },
   { id: "debug", type: "toggle", value: false }
@@ -37,7 +37,7 @@ soso-panel uses a cascading default system where each level overrides the previo
 2. **Control defaults** (in each control's `register()` call)<br>
    For example, `button` sets: `{ label: null }`
 
-3. **User config** (what you pass to `Soso.create()`)<br>
+3. **User config** (what you pass to `soso.create()`)<br>
    Your values override everything: `{ label: "Speed", value: 7 }`
 
 Example showing all three levels:
