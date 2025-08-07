@@ -37,6 +37,28 @@ const textPanel = Soso.create(
         value:
           "this is a very long text value that might overflow the input field",
       },
+      {
+        id: "textMultiline",
+        type: "text",
+        label: "multiline",
+        multiline: true,
+        value: "Line 1\nLine 2\nLine 3",
+      },
+      {
+        id: "textMultilineCustom",
+        type: "text",
+        label: "6 rows",
+        multiline: true,
+        rows: 6,
+        value:
+          "Custom row count.\n\nYou can set the number of visible rows.\n\nThis one has rows: 6",
+      },
+      {
+        id: "textMultilineEmpty",
+        type: "text",
+        label: "empty multiline",
+        multiline: true,
+      },
     ],
   },
   { mount: createMount() }
