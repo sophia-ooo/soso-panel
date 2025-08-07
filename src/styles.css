@@ -68,18 +68,13 @@
   padding: var(--panel-space) var(--panel-space);
 }
 
+/* reduce spacing between adjacent rows */
 .soso-panel .row + .row {
   padding-top: calc(var(--panel-space) * 0.5);
 }
 
-.soso-panel .row:has(+ .group.hide-label),
 .soso-panel .row:has(+ .row) {
   padding-bottom: calc(var(--panel-space) * 0.5);
-}
-
-/* :( */
-.soso-panel .group.hide-label:not(:only-child) > .container > .row:first-child {
-  padding-top: calc(var(--panel-space) * 0.5);
 }
 
 .soso-panel .container .container {
