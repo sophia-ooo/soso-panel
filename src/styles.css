@@ -197,7 +197,8 @@
 /* base input styles */
 .soso-panel button,
 .soso-panel input,
-.soso-panel select {
+.soso-panel select,
+.soso-panel textarea {
   font-size: inherit;
   font-family: inherit;
   width: 100%;
@@ -229,14 +230,16 @@
   cursor: pointer;
 }
 
-.soso-panel input[type="text"] {
+.soso-panel input[type="text"],
+.soso-panel textarea {
   cursor: text;
 }
 
 /* focus states */
 .soso-panel button:focus-visible,
 .soso-panel select:focus-visible,
-.soso-panel input:focus-visible {
+.soso-panel input:focus-visible,
+.soso-panel textarea:focus-visible {
   outline: 2px solid var(--panel-focus);
   outline-offset: 0px;
 }
@@ -244,14 +247,16 @@
 /* remove default focus for mouse users */
 .soso-panel button:focus:not(:focus-visible),
 .soso-panel select:focus:not(:focus-visible),
-.soso-panel input:focus:not(:focus-visible) {
+.soso-panel input:focus:not(:focus-visible),
+.soso-panel textarea:focus:not(:focus-visible) {
   outline: none;
 }
 
 /* hover states */
 .soso-panel button:hover:not(:active):not(.selected),
 .soso-panel input:hover,
-.soso-panel select:hover {
+.soso-panel select:hover,
+.soso-panel textarea:hover {
   background: var(--panel-hover);
 }
 
@@ -264,9 +269,18 @@
 }
 
 /* selection */
-.soso-panel input::selection {
+.soso-panel input::selection,
+.soso-panel textarea::selection {
   background: var(--panel-selection-bg);
   color: var(--panel-selection-fg);
+}
+
+.soso-panel textarea {
+  resize: vertical;
+  min-height: calc(var(--row-height) * 2 + var(--panel-space));
+  line-height: var(--line-height-normal);
+  color: var(--value-string);
+  font-family: var(--font-value);
 }
 
 /* === specific controls === */

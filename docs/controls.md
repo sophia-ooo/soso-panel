@@ -83,10 +83,19 @@ Example showing all three levels:
 ### `text` – Text input field
 
 ```js
+// Single line (default)
 { id: "name", type: "text", value: "untitled" }
+
+// Multiline textarea
+{
+  id: "description", type: "text",
+  multiline: true, rows: 4, value: "Line 1\nLine 2"
+}
 ```
 
 - **value** – string
+- multiline – boolean (use textarea instead of input, defaults to `false`)
+- rows – number (visible rows for multiline, defaults to `4`)
 
 ### `color` – Color picker with hex input
 
