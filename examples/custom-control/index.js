@@ -1,4 +1,4 @@
-import Soso, { register } from "soso-panel/external";
+import soso, { register } from "soso-panel/external";
 
 // ============================================================================
 // CUSTOM CONTROL DEFINITION
@@ -45,7 +45,7 @@ register("emoji-palette", EmojiPalette, {
 // LIBRARY SETUP
 // ============================================================================
 
-const panel = Soso.create({
+const panel = soso.create({
   type: "group",
   id: "emoji picker",
   nodes: [

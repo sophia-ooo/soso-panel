@@ -7,10 +7,10 @@ A declarative, event-driven graphical interface for monitoring and modifying Jav
 [Examples](http://sophia-ooo.github.io/soso-panel/examples/) • [API](docs/api.md) • [Controls](docs/controls.md)
 
 ```js
-import Soso from "soso-panel";
+import soso from "soso-panel";
 
 // Create a panel
-const panel = Soso.create([
+const panel = soso.create([
     { id: "speed", type: "range", min: 0, max: 10, value: 5 },
     { id: "color", type: "color", value: "#ff0055" },
     { id: "debug", type: "toggle", value: false },
@@ -44,8 +44,8 @@ soso-panel is built on three principles:
 
 ## API
 
-- [`Soso.create(config[, options])`](docs/api.md#sosocreateconfig-options)
-- [`Soso.register(type, component[, options])`](docs/api.md#sosoregistertype-component-options)
+- [`soso.create(config[, options])`](docs/api.md#sosocreateconfig-options)
+- [`soso.register(type, component[, options])`](docs/api.md#sosoregistertype-component-options)
 - [`panel.get()`](docs/api.md#panelget)
 - [`panel.set(values[, options])`](docs/api.md#panelsetvalues-options)
 - [`panel.update(updates[, options])`](docs/api.md#panelupdateupdates-options)
@@ -70,7 +70,7 @@ See the [full controls reference](docs/controls.md).
 soso-panel uses CSS custom properties for easy theming. Apply themes with the `classNames` option:
 
 ```js
-const panel = Soso.create(controls, {
+const panel = soso.create(controls, {
     classNames: ["dark-theme", "compact"],
 });
 ```

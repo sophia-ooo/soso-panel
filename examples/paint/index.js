@@ -1,10 +1,10 @@
-import Soso from "soso-panel";
+import soso from "soso-panel";
 
 // ============================================================================
 // LIBRARY SETUP
 // ============================================================================
 
-const panel = Soso.create({
+const panel = soso.create({
   id: "paint",
   type: "group",
   nodes: [

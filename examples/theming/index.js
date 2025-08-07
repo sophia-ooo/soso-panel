@@ -1,4 +1,4 @@
-import Soso from "soso-panel";
+import soso from "soso-panel";
 
 // ============================================================================
 // LIBRARY SETUP
@@ -31,22 +31,22 @@ const config = {
 const container = document.getElementById("container");
 const createMount = () => container.appendChild(document.createElement("div"));
 
-const lightPanel = Soso.create(config, {
+const lightPanel = soso.create(config, {
   classNames: ["soso-light"],
   mount: createMount(),
 });
 
-const contrastPanel = Soso.create(config, {
+const contrastPanel = soso.create(config, {
   classNames: ["soso-high-contrast"],
   mount: createMount(),
 });
 
-const solarPanel = Soso.create(config, {
+const solarPanel = soso.create(config, {
   classNames: ["soso-solarized-dark"],
   mount: createMount(),
 });
 
-const pocketPanel = Soso.create(config, {
+const pocketPanel = soso.create(config, {
   classNames: ["pocket-console"],
   mount: createMount(),
 });

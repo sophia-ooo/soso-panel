@@ -1,11 +1,11 @@
 import p5 from "p5";
-import Soso from "soso-panel";
+import soso from "soso-panel";
 
 // ============================================================================
 // LIBRARY SETUP
 // ============================================================================
 
-const panel = Soso.create({
+const panel = soso.create({
   id: "p5.js demo",
   type: "group",
   nodes: [

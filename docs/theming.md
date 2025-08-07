@@ -5,7 +5,7 @@
 Apply custom styles using the `classNames` option:
 
 ```js
-const panel = Soso.create(controls, {
+const panel = soso.create(controls, {
     classNames: ["dark-theme", "compact"],
 });
 ```

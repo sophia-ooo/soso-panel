@@ -1,4 +1,4 @@
-import Soso from "soso-panel";
+import soso from "soso-panel";
 
 // ============================================================================
 // DEMO LOGIC - RAF Counting
@@ -17,7 +17,7 @@ window.requestAnimationFrame = (callback) => {
 // LIBRARY SETUP
 // ============================================================================
 
-const panelWithRAF = Soso.create(
+const panelWithRAF = soso.create(
   {
     type: "group",
     label: "throttleRendering: true (default)",
@@ -31,7 +31,7 @@ const panelWithRAF = Soso.create(
   }
 );
 
-const panelWithoutRAF = Soso.create(
+const panelWithoutRAF = soso.create(
   {
     type: "group",
     label: "throttleRendering: false",
