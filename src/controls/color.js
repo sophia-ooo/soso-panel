@@ -38,11 +38,11 @@ const ColorControl = ({ nodes, treeNode, update }) => {
         type="color"
         value={value}
         onInput={handleInput}
-        className="color-picker"
+        className="soso-color-picker"
       />
       <input
         type="text"
-        className="fixed"
+        className="soso-fixed"
         size="7"
         value={value}
         onInput={handleInput}
