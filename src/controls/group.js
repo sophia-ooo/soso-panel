@@ -14,26 +14,26 @@ export const Group = ({ nodes, treeNode, update }) => {
     />
   ));
 
-  const expandStyle = node.expanded ? "expanded" : "collapsed";
-  const labelStyle = node.showLabel ? "show-label" : "hide-label";
+  const expandStyle = node.expanded ? "soso-expanded" : "soso-collapsed";
+  const labelStyle = node.showLabel ? "soso-show-label" : "soso-hide-label";
   const showLabel = !(node.label === "" || node.label === null); // same as Control
 
   return (
-    <div className={`group ${expandStyle} ${labelStyle}`}>
+    <div className={`soso-group ${expandStyle} ${labelStyle}`}>
       {showLabel && (
         <span
-          className="label"
+          className="soso-label"
           onClick={() => {
             if (node.expandable) {
               update({ [node.id]: { expanded: !node.expanded } });
             }
           }}
         >
-          {node.expandable && <span className="icon">&#8963;</span>}
+          {node.expandable && <span className="soso-icon">&#8963;</span>}
           {node.label ?? node.id}
         </span>
       )}
-      <div className="container">{children}</div>
+      <div className="soso-container">{children}</div>
     </div>
   );
 };

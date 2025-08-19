@@ -5,7 +5,7 @@ const ButtonsControl = ({ nodes, treeNode, update }) => {
   const node = nodes[treeNode.id];
 
   const options = normalizeOptions(node.options).map(({ label, value }, i) => {
-    const selectedStyle = node.value === value ? "selected" : "";
+    const selectedStyle = node.value === value ? "soso-selected" : "";
     return (
       <button
         onClick={() => update({ [node.id]: { value } })}
@@ -18,7 +18,7 @@ const ButtonsControl = ({ nodes, treeNode, update }) => {
     );
   });
 
-  return <div className="buttons">{options}</div>;
+  return <div className="soso-buttons">{options}</div>;
 };
 
 register("buttons", ButtonsControl, {

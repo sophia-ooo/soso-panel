@@ -21,9 +21,9 @@ export const Control = ({ nodes, treeNode, update }) => {
   const showLabel = !(node.label === "" || node.label === null); // same as Group
 
   return (
-    <div className="row" role="group" aria-label={node.label ?? node.id}>
-      {showLabel && <span className="label">{node.label ?? node.id}</span>}
-      <div className="control">{element}</div>
+    <div className="soso-row" role="group" aria-label={node.label ?? node.id}>
+      {showLabel && <span className="soso-label">{node.label ?? node.id}</span>}
+      <div className="soso-control">{element}</div>
     </div>
   );
 };

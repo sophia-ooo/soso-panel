@@ -75,7 +75,7 @@ const GraphControl = ({ nodes, treeNode, update }) => {
     ctx.fillText(min, 3, height);
   }, [history, range, node]);
 
-  return <canvas className="graph" ref={canvasRef} height={node.height} />;
+  return <canvas className="soso-graph" ref={canvasRef} height={node.height} />;
 };
 
 register("graph", GraphControl, {

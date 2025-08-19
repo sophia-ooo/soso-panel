@@ -13,7 +13,7 @@ export const NumberControl = ({ nodes, treeNode, update }) => {
 
   return (
     <input
-      className="number-input"
+      className="soso-number-input"
       type="text"
       value={text}
       onInput={(e) => setValue(e.currentTarget.value)}

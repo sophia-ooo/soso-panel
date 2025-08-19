@@ -145,7 +145,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
           e.preventDefault();
           startDrag(e);
         }}
-        className={`translate ${dragging ? "selected" : ""}`}
+        className={`soso-translate ${dragging ? "soso-selected" : ""}`}
         type="button"
         style={{
           touchAction: "none",
@@ -155,7 +155,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
         &#8982;
       </button>
       <input
-        className="number-input fixed"
+        className="soso-number-input soso-fixed"
         type="text"
         size="7"
         value={boundX.text}
@@ -163,7 +163,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
         onChange={boundX.handleBlur}
       />
       <input
-        className="number-input fixed"
+        className="soso-number-input soso-fixed"
         type="text"
         size="7"
         value={boundY.text}
@@ -171,7 +171,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
         onChange={boundY.handleBlur}
       />
       {dragging && (
-        <div className="pad2">
+        <div className="soso-pad2">
           <svg
             width={styles.width}
             height={styles.height}
@@ -187,7 +187,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
               width={styles.width}
               height={styles.height}
               fill="transparent"
-              className="border"
+              className="soso-border"
               rx={styles.radius}
             />
             {/* grid lines */}
@@ -196,21 +196,21 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
               y1={0}
               x2={styles.width / 2}
               y2={styles.height}
-              className="grid"
+              className="soso-grid"
             />
             <line
               x1={0}
               y1={styles.height / 2}
               x2={styles.width}
               y2={styles.height / 2}
-              className="grid"
+              className="soso-grid"
             />
 
             {/* corner labels */}
             <text
               x={styles.space}
               y={styles.space}
-              className="label"
+              className="soso-label"
               dominant-baseline="hanging"
               font-size="10"
             >
@@ -220,7 +220,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
               x={styles.width - styles.space}
               y={styles.space}
               dominant-baseline="hanging"
-              className="label"
+              className="soso-label"
               font-size="10"
               text-anchor="end"
             >
@@ -229,7 +229,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
             <text
               x={styles.space}
               y={styles.height - styles.space}
-              className="label"
+              className="soso-label"
               font-size="10"
             >
               {node.minX},{node.maxY}
@@ -237,7 +237,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
             <text
               x={styles.width - styles.space}
               y={styles.height - styles.space}
-              className="label"
+              className="soso-label"
               font-size="10"
               text-anchor="end"
             >
@@ -249,7 +249,7 @@ export const Pad2Control = ({ nodes, treeNode, update }) => {
               cx={((x - node.minX) / (node.maxX - node.minX)) * styles.width}
               cy={((y - node.minY) / (node.maxY - node.minY)) * styles.height}
               r={6}
-              className="indicator"
+              className="soso-indicator"
             />
           </svg>
         </div>

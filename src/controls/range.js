@@ -24,7 +24,7 @@ export const RangeControl = ({ nodes, treeNode, update }) => {
       <input
         type="text"
         size="7"
-        className="number-input fixed"
+        className="soso-number-input soso-fixed"
         value={text}
         onInput={(e) => setValue(e.currentTarget.value)}
         onChange={handleBlur}
