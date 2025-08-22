@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sophia-ooo/panel.git"
+    "url": "git+https://github.com/sophia-ooo/soso-panel.git"
   },
   "bugs": {
-    "url": "https://github.com/sophia-ooo/panel/issues"
+    "url": "https://github.com/sophia-ooo/soso-panel/issues"
   },
-  "homepage": "https://github.com/sophia-ooo/panel#readme",
+  "homepage": "https://github.com/sophia-ooo/soso-panel#readme",
   "devDependencies": {
     "esbuild": "^0.25.5",
     "preact": "^10.26.8"
