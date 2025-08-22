@@ -4,6 +4,8 @@
 
 A declarative, event-driven graphical interface for monitoring and modifying JavaScript variables.
 
+[![npm version](https://img.shields.io/npm/v/soso-panel)](https://www.npmjs.com/package/soso-panel)
+
 [Examples](http://sophia-ooo.github.io/soso-panel/examples/) • [API](docs/api.md) • [Controls](docs/controls.md)
 
 ```js
